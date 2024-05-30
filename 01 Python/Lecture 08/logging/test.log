@@ -1,0 +1,33 @@
+2024-05-16 09:56:22,359 Iam going to start my program
+2024-05-16 09:56:23,318 This is my first warning of my program so modify it
+2024-05-16 09:56:23,783 this message for error
+2024-05-16 10:05:06,248 Error has occured
+2024-05-16 10:05:06,249 division by zero
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_176004\2715552563.py", line 3, in test
+    div = a / b
+          ~~^~~
+ZeroDivisionError: division by zero
+2024-05-16 10:09:04,550 Error has occured
+2024-05-16 10:09:04,550 division by zero
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_176004\2715552563.py", line 3, in test
+    div = a / b
+          ~~^~~
+ZeroDivisionError: division by zero
+2024-05-16 10:09:47,992 40
+2024-05-16 10:09:47,992 Error has occured
+2024-05-16 10:09:47,993 division by zero
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_176004\2265496504.py", line 4, in test
+    div = a / b
+          ~~^~~
+ZeroDivisionError: division by zero
+2024-05-16 10:10:12,150 4, 0
+2024-05-16 10:10:12,152 Error has occured
+2024-05-16 10:10:12,152 division by zero
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_176004\91668355.py", line 4, in test
+    div = a / b
+          ~~^~~
+ZeroDivisionError: division by zero

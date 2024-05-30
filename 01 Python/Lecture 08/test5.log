@@ -1,0 +1,8 @@
+2024-05-16 11:56:16,254 INFO This is my first code for log
+2024-05-16 11:56:16,258 INFO This is info for logger one
+2024-05-16 11:56:16,260 DEBUG This is info for logger two
+2024-05-16 11:56:16,261 INFO This is info for logger two
+2024-05-16 11:56:24,867 INFO This is info for logger one
+2024-05-16 11:56:24,868 DEBUG This is info for logger two
+2024-05-16 11:56:24,869 INFO This is info for logger two
+2024-05-16 11:56:31,694 INFO This is my first code for log

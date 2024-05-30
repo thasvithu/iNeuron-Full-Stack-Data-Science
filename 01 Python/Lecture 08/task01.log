@@ -1,0 +1,183 @@
+INFO:root:Function Start with inputs 5 and 6
+INFO:root:Function Start with inputs 5 and add
+ERROR:root:Error has occured
+ERROR:root:unsupported operand type(s) for /: 'int' and 'str'
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_126816\2215864335.py", line 10, in task02
+    return a / b
+           ~~^~~
+TypeError: unsupported operand type(s) for /: 'int' and 'str'
+INFO:root:Function Start with inputs
+ERROR:root:Error has occured
+ERROR:root:tuple index out of range
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_126816\3908728707.py", line 8, in task02
+    lg.info(str(args[i]))
+                ~~~~^^^
+IndexError: tuple index out of range
+INFO:root:Function Start with inputs
+ERROR:root:Error has occured
+ERROR:root:tuple index out of range
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_126816\3908728707.py", line 8, in task02
+    lg.info(str(args[i]))
+                ~~~~^^^
+IndexError: tuple index out of range
+INFO:root:Function Start with inputs
+INFO:root:2
+INFO:root:3
+INFO:root:4
+INFO:root:5
+INFO:root:6
+INFO:root:7
+INFO:root:8
+INFO:root:9
+INFO:root:10
+ERROR:root:Error has occured
+ERROR:root:tuple index out of range
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_126816\3908728707.py", line 8, in task02
+    lg.info(str(args[i]))
+                ~~~~^^^
+IndexError: tuple index out of range
+INFO:root:Function Start with inputs
+ERROR:root:Error has occured
+ERROR:root:tuple index out of range
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_126816\668339547.py", line 8, in task02
+    lg.info(args[i])
+            ~~~~^^^
+IndexError: tuple index out of range
+INFO:root:Function Start with inputs
+ERROR:root:Error has occured
+ERROR:root:tuple index out of range
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_126816\668339547.py", line 8, in task02
+    lg.info(args[i])
+            ~~~~^^^
+IndexError: tuple index out of range
+INFO:root:Function Start with inputs
+INFO:root:2
+INFO:root:3
+INFO:root:4
+INFO:root:5
+INFO:root:6
+INFO:root:7
+INFO:root:8
+INFO:root:9
+INFO:root:10
+ERROR:root:Error has occured
+ERROR:root:tuple index out of range
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_126816\668339547.py", line 8, in task02
+    lg.info(args[i])
+            ~~~~^^^
+IndexError: tuple index out of range
+INFO:root:Function Start with inputs
+INFO:root:5
+INFO:root:6
+INFO:root:Function Start with inputs
+INFO:root:5
+INFO:root:add
+ERROR:root:Error has occured
+ERROR:root:unsupported operand type(s) for +: 'int' and 'str'
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_126816\4008467552.py", line 9, in task02
+    return sum(args)
+           ^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+INFO:root:Function Start with inputs
+INFO:root:1
+INFO:root:2
+INFO:root:3
+INFO:root:4
+INFO:root:5
+INFO:root:6
+INFO:root:7
+INFO:root:8
+INFO:root:9
+INFO:root:10
+INFO:root:Function Start with inputs
+INFO:root:1
+INFO:root:2
+INFO:root:3
+INFO:root:4
+INFO:root:5
+INFO:root:6
+INFO:root:7
+INFO:root:8
+INFO:root:9
+INFO:root:10
+INFO:root:ä
+ERROR:root:Error has occured
+ERROR:root:unsupported operand type(s) for +: 'int' and 'str'
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_126816\4008467552.py", line 9, in task02
+    return sum(args)
+           ^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+INFO:root:Function Start with inputs
+INFO:root:1
+INFO:root:2
+INFO:root:3
+INFO:root:4
+INFO:root:5
+INFO:root:6
+INFO:root:7
+INFO:root:8
+INFO:root:9
+INFO:root:10
+INFO:root:d
+ERROR:root:Error has occured
+ERROR:root:unsupported operand type(s) for +: 'int' and 'str'
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_126816\4008467552.py", line 9, in task02
+    return sum(args)
+           ^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+INFO:root:Function Start with inputs
+INFO:root:5
+INFO:root:6
+INFO:root:Function Start with inputs
+INFO:root:5
+INFO:root:add
+ERROR:root:Error has occured
+ERROR:root:unsupported operand type(s) for +: 'int' and 'str'
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_156404\4008467552.py", line 9, in task02
+    return sum(args)
+           ^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+INFO:root:Function Start with inputs
+INFO:root:1
+INFO:root:2
+INFO:root:3
+INFO:root:4
+INFO:root:5
+INFO:root:6
+INFO:root:7
+INFO:root:8
+INFO:root:9
+INFO:root:10
+INFO:root:Function Start with inputs
+INFO:root:1
+INFO:root:2
+INFO:root:3
+INFO:root:4
+INFO:root:5
+INFO:root:6
+INFO:root:7
+INFO:root:8
+INFO:root:9
+INFO:root:10
+INFO:root:d
+ERROR:root:Error has occured
+ERROR:root:unsupported operand type(s) for +: 'int' and 'str'
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_156404\4008467552.py", line 9, in task02
+    return sum(args)
+           ^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+INFO:root:This is my first code for log
+INFO:logger1.area1:This is info for logger one
+INFO:logger2.area2:This is info for logger two
