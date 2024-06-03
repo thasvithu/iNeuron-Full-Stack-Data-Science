@@ -1,0 +1,12 @@
+Assignment 
+----------
+Load data
+profiling of data
+Write your analysis of data
+NAN, imputation
+Not Normal --> Handle it
+check malticorelinearity
+Build a model
+Save it 
+Model accuracy
+10 Test cases  
