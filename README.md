@@ -11,21 +11,36 @@ Welcome to my **iNeuron Full Stack Data Science - 2024** journey! This repositor
 - File Handling
 - Modules and Exception
 - Logging and Debugging
-- OOP (Objet-Oriented Programing)
+- OOP (Object-Oriented Programming)
 - API
 - Flask
 - Django
 
 ### 2. Statistics
-- Descriptive statistic
+- Descriptive statistics
 - Inferential statistics
 - Probability theory
 - Hypothesis testing
+- Chi-Square tests
+- ANOVA test
 - Regression analysis
 
 ### 3. Databases
+- MySQL
+- SQLite
+- MongoDB
+- Cassandra
 
 ### 4. Data Analytics
+- EDA
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- Excel
+- PowerBI
+- Tableau
+- Feature Engineering
 
 ### 5. Machine Learning
 
