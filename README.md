@@ -15,6 +15,7 @@ Welcome to my **iNeuron Full Stack Data Science - 2024** journey! This repositor
 - API
 - Flask
 - Django
+- Python Assignments (Practical & Theory)
 
 ### 2. Statistics
 - Descriptive statistics
