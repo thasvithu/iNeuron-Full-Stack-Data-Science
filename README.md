@@ -1,21 +1,25 @@
-# iNeuron Full Stack Data Science - 2024
+# My iNeuron Full Stack Data Science - 2024 Journey
 
-Welcome to the **iNeuron Full Stack Data Science - 2024** program! This repository contains resources, code samples, and assignments for the comprehensive data science curriculum designed to equip you with the skills needed to excel in the field of data science.
+Welcome to my **iNeuron Full Stack Data Science - 2024** journey! This repository contains resources, code samples, and assignments for the comprehensive data science curriculum I am currently undertaking. This repository is designed to track my progress and to share insights and learnings as I work through the program.
 
 ## Curriculum
 
 ### 1. Python
-Python is the foundational programming language for data science. This section covers:
 - Basics of Python
 - Data structures
-- Libraries: NumPy, Pandas, Matplotlib, Seaborn
-- Functions, OOP, and more
+- Functions
+- File Handling
+- Modules and Exception
+- Logging and Debugging
+- OOP (Objet-Oriented Programing)
+- API
+- Flask
+- Django
 
 ### 2. Statistics
-Understanding statistics is crucial for data analysis and machine learning. Topics include:
-- Descriptive statistics
-- Probability theory
+- Descriptive statistic
 - Inferential statistics
+- Probability theory
 - Hypothesis testing
 - Regression analysis
 
@@ -36,6 +40,9 @@ Understanding statistics is crucial for data analysis and machine learning. Topi
 ### 10. ML Ops
 
 ### 11. Cloud Computing - AWS
+
+### 12. DSAR (Data Science Architecture)
+
 
 ## Getting Started
 
