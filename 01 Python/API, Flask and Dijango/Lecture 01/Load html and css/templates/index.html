@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Student Management System</h1>
+
+        <h2>Create New Account</h2>
+        <form id="create-account-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="index_number">Index Number:</label>
+            <input type="text" id="index_number" name="index_number" required>
+
+            <label for="mobile_no">Mobile Number:</label>
+            <input type="text" id="mobile_no" name="mobile_no" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <button type="submit">Create Account</button>
+        </form>
+
+        <h2>Student List</h2>
+        <table id="student-list">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Index Number</th>
+                    <th>Mobile Number</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Student records will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
