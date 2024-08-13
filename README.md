@@ -44,6 +44,13 @@ Welcome to my **iNeuron Full Stack Data Science - 2024** journey! This repositor
 - Feature Engineering
 
 ### 5. Machine Learning
+- Supervised Machine Learning
+    - Regression
+    - Classification
+- Unsupervised Machine Learning
+    - Clustering
+- Semi-Supervised Learning
+    - Regression + Classification + Clustering
 
 ### 6. Deep Learning
 
