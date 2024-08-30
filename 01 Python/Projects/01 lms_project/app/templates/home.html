@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to LearnVista</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>LearnVista</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="{{ url_for('login') }}">Login</a></li>
+                    <li><a href="{{ url_for('register') }}">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h2>Unlock Your Potential with LearnVista</h2>
+                <p>Join thousands of learners and advance your career with our extensive range of courses.</p>
+                <a href="#" class="btn">Explore Courses</a>
+            </div>
+        </section>
+
+        <!-- Course Offerings -->
+        <section class="courses">
+            <div class="container">
+                <h2>Featured Courses</h2>
+                <div class="course-list">
+                    <div class="course">
+                        <h3>Web Development</h3>
+                        <p>Learn how to build modern, responsive websites from scratch.</p>
+                    </div>
+                    <div class="course">
+                        <h3>Data Science</h3>
+                        <p>Master data analysis and machine learning techniques.</p>
+                    </div>
+                    <div class="course">
+                        <h3>Digital Marketing</h3>
+                        <p>Discover strategies for successful online marketing campaigns.</p>
+                    </div>
+                </div>
+                <a href="#" class="btn">View All Courses</a>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>What Our Students Say</h2>
+                <div class="testimonial">
+                    <p>"LearnVista has changed my life! The courses are engaging and the instructors are top-notch!"</p>
+                    <cite>- Jane Doe</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"I gained so many valuable skills through the courses I took. Highly recommend!"</p>
+                    <cite>- John Smith</cite>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 LearnVista. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
