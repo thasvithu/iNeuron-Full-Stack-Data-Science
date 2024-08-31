@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - LearnVista</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+    <!-- Flash messages -->
+    <div class="flash-message" id="flash-message">
+        <!-- Success message will be inserted here -->
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+            <script>
+                const flashMessage = document.getElementById('flash-message');
+                // Loop through each message
+                {% for category, message in messages %}
+                    flashMessage.innerHTML += "{{ message|escape }}<br>"; // Append message safely
+                    flashMessage.classList.add("flash-{{ category }}"); // Add class for styling
+                {% endfor %}
+                flashMessage.style.display = 'block'; // Show the flash message
+
+                // Hide the flash message after 5 seconds
+                setTimeout(() => {
+                    flashMessage.style.display = 'none'; // Hide the flash message after 5 seconds
+                }, 5000);
+            </script>
+        {% endif %}
+    {% endwith %}
+
+    <header>
+        <h1>Welcome, {{ user[1] }}!</h1>  <!-- Assuming first name is in column 1 -->
+        <a href="/logout">Logout</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>Your Details</h2>
+            <p><strong>Email:</strong> {{ user[2] }}</p>
+            <p><strong>First Name:</strong> {{ user[0] }}</p>
+            <p><strong>Last Name:</strong> {{ user[1] }}</p>
+            <p><strong>Phone:</strong> {{ user[5] }}</p>
+            <p><strong>Country:</strong> {{ user[4] }}</p>
+            <p><strong>DOB:</strong> {{ user[6] }}</p>
+            <p><strong>Role:</strong> {{ user[7] }}</p>
+        </section>
+
+        <section>
+            <h2>Edit Details</h2>
+            <!-- Form for editing details -->
+            <form action="/edit_details" method="POST">
+                <div>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" value="{{ user[0] }}" required>
+                </div>
+                <div>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" value="{{ user[1] }}" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="text" id="password" name="password" value="{{ user[3] }}" required>
+                </div>
+                <div>
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" value="{{ user[4] }}" required>
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" value="{{ user[5] }}" required>
+                </div>
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" value="{{ user[6] }}" required>
+                </div>
+                <div>
+                    <label for="role">I am a</label>
+                    <select id="role" name="role">
+                        <option value="student">Student</option>
+                        <option value="instructor">Instructor</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <button type="submit">Save Changes</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Enrolled Courses</h2>
+            <!-- Display the list of enrolled courses here -->
+        </section>
+
+        <section>
+            <h2>Close Account</h2>
+            <form action="/close_account" method="POST">
+                <button type="submit">Close Account</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

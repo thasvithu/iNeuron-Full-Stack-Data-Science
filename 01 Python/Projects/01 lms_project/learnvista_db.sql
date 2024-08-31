@@ -16,5 +16,19 @@ USE learnvista_db;
 
 #SHOW TABLES;
 
+
 #DESC users;
+
+
+CREATE TABLE users (
+    email VARCHAR(500) NOT NULL PRIMARY KEY,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    country VARCHAR(100) NOT NULL,
+    phone VARCHAR(20),
+    dob DATE,
+    role ENUM('student', 'instructor', 'admin') NOT NULL
+);
+
 

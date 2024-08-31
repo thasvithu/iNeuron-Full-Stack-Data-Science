@@ -1,0 +1,32 @@
+/* Close Account Page Specific Styles */
+h1 {
+    color: #d9534f; /* Red color to emphasize the seriousness of the action */
+}
+
+.btn-danger {
+    background-color: #d9534f; /* Bootstrap-like danger button */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+}
+
+.btn {
+    background-color: #6c757d; /* Bootstrap-like secondary button */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #5a6268;
+}

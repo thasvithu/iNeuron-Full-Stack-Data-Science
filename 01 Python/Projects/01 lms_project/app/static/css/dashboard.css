@@ -1,75 +1,40 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
-.login-container {
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-}
-
-.login-form h2 {
-    margin-bottom: 20px;
-    color: #333;
+header {
+    background-color: #009688;
+    color: white;
+    padding: 15px;
     text-align: center;
 }
 
-.input-group {
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 15px;
     margin-bottom: 20px;
-}
-
-.input-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.btn {
-    width: 100%;
-    padding: 10px;
+button {
     background-color: #009688;
     color: white;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
-    font-size: 1.2em;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-.btn:hover {
+button:hover {
     background-color: #00796b;
-}
-
-.register-link {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.register-link a {
-    color: #009688;
-    text-decoration: none;
-}
-
-.register-link a:hover {
-    text-decoration: underline;
 }
 
 /* CSS for the flash messages */

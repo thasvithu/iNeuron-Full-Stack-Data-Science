@@ -10,6 +10,28 @@
 </head>
 
 <body>
+    <!-- Flash messages -->
+    <div class="flash-message" id="flash-message">
+        <!-- Success message will be inserted here -->
+    </div>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <script>
+                // Get the flash message and display it
+                const flashMessage = document.getElementById('flash-message');
+                flashMessage.innerHTML = "{{ messages[0] }}"; // Show the first message
+                flashMessage.style.display = 'block'; // Show the flash message
+
+                // Hide the flash message after 5 seconds
+                setTimeout(() => {
+                    flashMessage.style.display = 'none'; // Hide the flash message after 5 seconds
+                }, 5000);
+            </script>
+        {% endif %}
+    {% endwith %}
+
+
     <div class="register-container">
         <form action="/register" method="POST" class="register-form">
             <h2>Create Your LearnVista Account</h2>
@@ -291,12 +313,12 @@
 
             <!-- Optional Fields -->
             <div class="input-group">
-                <label for="phone">Phone Number (Optional)</label>
+                <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone">
             </div>
 
             <div class="input-group">
-                <label for="dob">Date of Birth (Optional)</label>
+                <label for="dob">Date of Birth</label>
                 <input type="date" id="dob" name="dob">
             </div>
 

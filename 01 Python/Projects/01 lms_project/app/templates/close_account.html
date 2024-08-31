@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Close Account</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Close Account</h1>
+        <p>Are you sure you want to close your account? This action cannot be undone, and all your data will be permanently deleted.</p>
+
+        <form action="{{ url_for('close_account') }}" method="POST">
+            <label for="confirm">Type <strong>CLOSE</strong> to confirm:</label>
+            <input type="text" id="confirm" name="confirm" required>
+            <button type="submit" class="btn-danger">Close My Account</button>
+            <a href="{{ url_for('dashboard') }}" class="btn">Cancel</a>
+        </form>
+    </div>
+</body>
+
+</html>

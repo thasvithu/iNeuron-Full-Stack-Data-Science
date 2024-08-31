@@ -10,6 +10,31 @@
 </head>
 
 <body>
+    <!-- Flash messages -->
+    <div class="flash-message" id="flash-message">
+        <!-- Success message will be inserted here -->
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+            <script>
+                const flashMessage = document.getElementById('flash-message');
+                // Loop through each message
+                {% for category, message in messages %}
+                    flashMessage.innerHTML += "{{ message|escape }}<br>"; // Append message safely
+                    flashMessage.classList.add("flash-{{ category }}"); // Add class for styling
+                {% endfor %}
+                flashMessage.style.display = 'block'; // Show the flash message
+
+                // Hide the flash message after 5 seconds
+                setTimeout(() => {
+                    flashMessage.style.display = 'none'; // Hide the flash message after 5 seconds
+                }, 5000);
+            </script>
+        {% endif %}
+    {% endwith %}
+
+
     <div class="login-container">
         <form action="/login" method="POST" class="login-form">
             <h2>Login to LearnVista</h2>

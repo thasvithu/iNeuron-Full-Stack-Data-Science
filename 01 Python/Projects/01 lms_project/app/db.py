@@ -6,15 +6,13 @@ def create_connection():
 
     try:
         user_db = connection.connect(
-            host = "localhost",
-            user = "root",
-            password = "",
-            database = "learnvista_db"
+            host = "us-cluster-east-01.k8s.cleardb.net",
+            user = "b693725dbe44f6",
+            password = "ac1c1439",
+            database = "heroku_a5aac21fbd25659"
         )
         if user_db.is_connected():
-            print("Successfully Connected to the database")
+            return  user_db
     except Error as e:
         print(f"The error '{e}' occurred")
-    return connection
-
-
+    return None

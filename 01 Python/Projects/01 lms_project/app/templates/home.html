@@ -10,13 +10,37 @@
 </head>
 
 <body>
+    <!-- Flash messages -->
+    <div class="flash-message" id="flash-message">
+        <!-- Success message will be inserted here -->
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+            <script>
+                const flashMessage = document.getElementById('flash-message');
+                // Loop through each message
+                {% for category, message in messages %}
+                    flashMessage.innerHTML += "{{ message|escape }}<br>"; // Append message safely
+                    flashMessage.classList.add("flash-{{ category }}"); // Add class for styling
+                {% endfor %}
+                flashMessage.style.display = 'block'; // Show the flash message
+
+                // Hide the flash message after 5 seconds
+                setTimeout(() => {
+                    flashMessage.style.display = 'none'; // Hide the flash message after 5 seconds
+                }, 5000);
+            </script>
+        {% endif %}
+    {% endwith %}
+
     <header>
         <div class="container">
             <h1>LearnVista</h1>
             <nav>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#">Courses</a></li>
+                    <li><a href="{{ url_for('login') }}">Home</a></li>
+                    <li><a href="{{ url_for('login') }}">Courses</a></li>
                     <li><a href="{{ url_for('login') }}">Login</a></li>
                     <li><a href="{{ url_for('register') }}">Register</a></li>
                 </ul>
@@ -30,7 +54,7 @@
             <div class="container">
                 <h2>Unlock Your Potential with LearnVista</h2>
                 <p>Join thousands of learners and advance your career with our extensive range of courses.</p>
-                <a href="#" class="btn">Explore Courses</a>
+                <a href="{{ url_for('login') }}" class="btn">Explore Courses</a>
             </div>
         </section>
 
@@ -42,17 +66,20 @@
                     <div class="course">
                         <h3>Web Development</h3>
                         <p>Learn how to build modern, responsive websites from scratch.</p>
+                        <a href="#" class="btn">Learn More</a>
                     </div>
                     <div class="course">
                         <h3>Data Science</h3>
                         <p>Master data analysis and machine learning techniques.</p>
+                        <a href="#" class="btn">Learn More</a>
                     </div>
                     <div class="course">
                         <h3>Digital Marketing</h3>
                         <p>Discover strategies for successful online marketing campaigns.</p>
+                        <a href="#" class="btn">Learn More</a>
                     </div>
                 </div>
-                <a href="#" class="btn">View All Courses</a>
+
             </div>
         </section>
 
@@ -62,11 +89,11 @@
                 <h2>What Our Students Say</h2>
                 <div class="testimonial">
                     <p>"LearnVista has changed my life! The courses are engaging and the instructors are top-notch!"</p>
-                    <cite>- Jane Doe</cite>
+                    <cite>- Vithu</cite>
                 </div>
                 <div class="testimonial">
                     <p>"I gained so many valuable skills through the courses I took. Highly recommend!"</p>
-                    <cite>- John Smith</cite>
+                    <cite>- Nila</cite>
                 </div>
             </div>
         </section>
