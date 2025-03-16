@@ -1,0 +1,15 @@
+2025/03/16 13:50:53 PM - DEBUG - This will get logged
+2025/03/16 13:50:53 PM - WARNING - This will get logged
+2025/03/16 13:50:53 PM - INFO - This will not get logged
+2025/03/16 13:50:53 PM - ERROR - This will get logged
+2025/03/16 13:50:53 PM - CRITICAL - This will get logged
+2025/03/16 13:50:53 PM - DEBUG - This will get logged
+2025/03/16 13:50:53 PM - WARNING - This will get logged
+2025/03/16 13:50:53 PM - INFO - This will not get logged
+2025/03/16 13:50:53 PM - ERROR - This will get logged
+2025/03/16 13:50:53 PM - CRITICAL - This will get logged
+2025/03/16 13:50:53 PM - DEBUG - This will get logged
+2025/03/16 13:50:53 PM - WARNING - This will get logged
+2025/03/16 13:50:53 PM - INFO - This will not get logged
+2025/03/16 13:50:53 PM - ERROR - This will get logged
+2025/03/16 13:50:53 PM - CRITICAL - This will get logged

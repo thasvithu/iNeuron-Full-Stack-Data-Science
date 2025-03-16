@@ -1,0 +1,7 @@
+STEP 01
+-------
+Create a Separate Virtual Environment.
+
+STEP 02
+-------
+Setup the folder structure
